@@ -9,7 +9,7 @@ import { InfoReService } from '../info-re.service';
 export class CaracteristicasComponent {
   
   indice?: number;
-  
+ 
 
 
   constructor(private route: ActivatedRoute,public service:InfoReService){
@@ -17,6 +17,7 @@ export class CaracteristicasComponent {
     this.route.params.subscribe(params=>{
       this.indice = parseInt(params['indice']);
     });
+    
   }
   
   

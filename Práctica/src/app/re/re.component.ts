@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { InfoReService } from '../info-re.service';
 
 
 @Component({
@@ -7,9 +8,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./re.component.css']
 })
 export class ReComponent {
-  @Input() nombre:string = "";
-  @Input() img:string = "";
   @Input() indice:number=0;
   
-
+  constructor(public service:InfoReService){
+     
+  }
 }

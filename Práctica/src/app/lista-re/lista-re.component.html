@@ -2,10 +2,15 @@
 <div ngClass="container-fluid" >
     <div ngClass="row row-cols-3">
         <div ngClass="col-3 estilo">
-            <app-re  *ngFor="let i of info.Recetas , let j=index" [indice]="j" [nombre]="i.N()" [img]="i.I()"></app-re>
+            <app-re  *ngFor="let i of info.Recetas , let j=index" [indice]="j"></app-re>
         </div>
         <div ngClass="col-6">
             <router-outlet></router-outlet>  
+        </div>
+        <div ngClass="col-3">
+            <img src="https://th.bing.com/th/id/OIP.KWrh-JL-UMxdak8ujMSZrAHaLr?w=195&h=307&c=7&r=0&o=5&dpr=1.5&pid=1.7"><br>
+            <img src="https://th.bing.com/th/id/OIP.p17sZmHRNnW7fz9NWR9qzQHaKa?w=195&h=275&c=7&r=0&o=5&dpr=1.5&pid=1.7"><br>
+            <img src="https://th.bing.com/th?id=OIP.kCwJS8riKfzA0eurskDL_QHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"  width="300" height="400">        
         </div>
     </div>
 </div>  
