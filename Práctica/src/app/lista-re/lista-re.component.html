@@ -1,12 +1,11 @@
 
-<div ngClass="container-fluid">
-    <div ngClass="row row-col-2">
-        <div ngClass="col">
-            <app-re  *ngFor="let i of Recetas , let j=index" [indice]="j" [nombre]="i.N()" [img]="i.I()" [des]="i.Des()"></app-re>
+<div ngClass="container-fluid" >
+    <div ngClass="row row-cols-3">
+        <div ngClass="col-3 estilo">
+            <app-re  *ngFor="let i of info.Recetas , let j=index" [indice]="j" [nombre]="i.N()" [img]="i.I()"></app-re>
         </div>
-        <div ngClass="col">
+        <div ngClass="col-6">
             <router-outlet></router-outlet>  
         </div>
-        
     </div>
 </div>  

@@ -9,10 +9,10 @@ import { Receta } from '../re/recetas';
   styleUrls: ['./lista-re.component.css']
 })
 export class ListaReComponent {
-  Recetas:Array<Receta>=[];
 
-  constructor(private info:InfoReService ){
-    this.Recetas=info.Recetas;
+
+  constructor(public info:InfoReService ){
+ 
   }
   
   

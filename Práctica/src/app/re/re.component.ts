@@ -9,7 +9,6 @@ import { Component, Input } from '@angular/core';
 export class ReComponent {
   @Input() nombre:string = "";
   @Input() img:string = "";
-  @Input() des:string = "";
   @Input() indice:number=0;
   
 

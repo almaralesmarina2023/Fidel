@@ -1,7 +1,9 @@
- <div>
-    <a [routerLink]="['carac',indice]" class="list-group-item list-group-item-action">
-        <h6>{{nombre}}</h6><br>
-        <img [src]="img" height="150" >
-        <p>{{des}}</p>
-    </a>
+<div  ngClass="card estilo mt-2">
+    <div ngClass="card-body">
+        <a [routerLink]="['carac',indice]" class="list-group-item list-group-item-action">
+            <h4  ngClass="card-title">{{nombre}}</h4><br>
+            <img [src]="img" ngClass="img-thumbnail" >
+            
+        </a>
+    </div>
 </div> 
