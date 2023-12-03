@@ -7,13 +7,17 @@ import { ReComponent } from './re/re.component';
 import { CaracteristicasComponent } from './caracteristicas/caracteristicas.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
+import { ContactosComponent } from './contactos/contactos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaReComponent,
     ReComponent,
-    CaracteristicasComponent
+    CaracteristicasComponent,
+    QuienesSomosComponent,
+    ContactosComponent
   ],
   imports: [
     BrowserModule,
